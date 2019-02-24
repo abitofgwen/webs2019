@@ -1,0 +1,11 @@
+body {
+  line-height: 1.26em;
+  width: 680px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0 10px 0 10px;
+}
+
+#space-invaders {
+  background-color: black;
+}
