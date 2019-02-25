@@ -1,0 +1,194 @@
+body {
+  font-family: Arial;
+  line-height: 1.26em;
+  width: 680px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0 10px 0 10px;
+}
+#space-invaders {
+  background-color: black;
+}
+.canvas {
+  text-align: center;
+  margin: 20px auto;
+}
+.container {
+  margin-top:40px;
+  height: 812px;
+  width: 375px;
+  background-image: url(bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  z-index: -1;
+}
+.chat ul {
+  margin-top: 120px;
+  padding: 0px;
+  list-style: none;
+}
+
+.message-left .message-time {
+  display: block;
+  font-size: 10px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 4px;
+  color: #ccc;
+  font-family: Courier;
+}
+
+.message-right .message-time {
+  display: block;
+  font-size: 10px;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 4px;
+  color: #ccc;
+  font-family: Courier;
+}
+
+.message-left {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.message-left .message-text {
+  max-width: 80%;
+  display: inline-block;
+  background: #fff;
+  padding: 15px;
+  font-size: 14px;
+  color: #999;
+  border-radius: 30px;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-left: 13px;
+}
+
+.message-right {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.message-right .message-text {
+  line-height: 1.5em;
+  display: inline-block;
+  background: #4A90E2;
+  padding: 15px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 30px;
+  line-height: 1.5em;
+  font-weight: 100;
+  text-align: left;
+}
+
+.chat {
+  padding: 20px;
+  height: 900px;
+  width: 415px;
+  background-image: url(bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.chat-container {
+  height: 850px;
+  overflow-y: scroll;
+  padding-right: 16px;
+}
+
+.spinme-right {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+  line-height: 1.25em;
+  font-weight: 100;
+  color: #FFFFFF;
+  opacity: 1;
+  z-index: 100;
+}
+
+.spinme-left {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 30px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 1;
+  z-index: 100;
+}
+
+.spinner {
+  margin: 0;
+  width: 30px;
+  text-align: center;
+  z-index: 100;
+}
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  background: rgba(255,255,255,1);
+  z-index: 100;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0)
+  }
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+@keyframes fadein {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+/* space invader related */
+.spaceInvader {
+  height: 300px;
+  margin-left: 5px;
+  width: 100%;
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 1.5s; /* Firefox < 16 */
+       -ms-animation: fadein 1.5s; /* Internet Explorer */
+        -o-animation: fadein 1.5s; /* Opera < 12.1 */
+           animation: fadein 1.5s;
+}
